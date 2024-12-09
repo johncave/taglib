@@ -26,15 +26,15 @@ licenses if you are considering using TagLib in your project.
 ## Jenkins Take-Home Task
 The Jenkins take-home task is completed in my repo https://github.com/johncave/taglib 
 
-### 1. (Optional) Install Jenkins
+### 1. Install Jenkins
 
-If you don’t want to use an exiting Jenkins instance, a docker-compose.yaml file is provided in the repo. Check out the repo and run `docker-compose up`, and connect to http://localhost:8080/jenkins/, copy the password in from the Docker Compose logs, and install the recommended plugins. Skip the remaining steps to continue using the default admin user.
+If you don’t want to use an exiting Jenkins instance with Docker support already installed, a docker-compose.yaml file is provided in the repo. With Docker installed, check out the repo, run `docker compose up`, and connect to http://localhost:8080/jenkins/, copy the password in from the Docker Compose logs, and install the recommended plugins. Skip the remaining steps to continue using the default admin user.
 
 ### 2. Configure Jenkins
 
 The “Docker” and “Docker Pipelines” plugins must be installed. In the Jenkins UI, navigate to `Manage Jenkins > Plugins > Available Plugins`, and search for “Docker”. Tick the two plugins and click install. 
 
-### Run The Pipeline
+### 3. Run The Pipeline
 
 Once there is a Jenkins instance with Docker support available, running the pipeline is pretty simple. 
 1.	On the Jenkins Homepage / Dashboard, click “New Item”.
